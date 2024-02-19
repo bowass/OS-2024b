@@ -1,0 +1,2180 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+% Convert the Lyx colors into more pleasent colors:
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{12,97,197}
+\definecolor{green}{RGB}{0,128,40}
+\definecolor{red}{RGB}{235,16,16}
+\definecolor{brown}{RGB}{154,58,0}
+\definecolor{orange}{RGB}{231,135,26}
+\definecolor{purple}{RGB}{94,53,177}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "Miriam Fixed"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size giant
+מערכות הפעלה – תרגיל בית
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Author
+אוניברסיטת חיפה
+\end_layout
+
+\begin_layout Date
+סמסטר אביב תשפ
+\begin_inset Quotes erd
+\end_inset
+
+ד
+\end_layout
+
+\begin_layout Center Header
+מערכות הפעלה – אוניברסיטת חיפה – תרגיל בית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+לתרגיל זה שני חלקים - תיאורטי ומעשי.
+\end_layout
+
+\begin_layout Enumerate
+חלק תיאורטי )
+\numeric on
+
+\begin_inset Formula $30\%$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניקוד(, בו יהיה עליכם לענות על מספר שאלות תיאורטיות.
+\end_layout
+
+\begin_layout Enumerate
+חלק מעשי )
+\begin_inset Formula $70\%$
+\end_inset
+
+ ניקוד(, בו יהיה עליכם לממש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+shell
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פשוט.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חלק תיאורטי
+\end_layout
+
+\begin_layout Enumerate
+הסבירו 
+\bar under
+במשפט אחד
+\bar default
+ מדוע בקונבנציית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+GCC
+\lang hebrew
+, כאשר קוראים לפונקציה, שומרים במחסנית בסדר הפוך את הפרמטרים המועברים לה,
+ כמתואר באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dry1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/dry1.png
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+העברת פרמטרים למחסנית, תחילה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+push
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\lang english
+Argument 
+\begin_inset Formula $n$
+\end_inset
+
+
+\lang hebrew
+, עד ל-
+\lang english
+Argument 
+\begin_inset Formula $1$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בסוף.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dry1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הסבירו 
+\bar under
+במשפט אחד
+\bar default
+ מדוע לא ניתן להעביר פרמטרים דרך המחסנית בזמן ביצוע קריאת מערכת,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+system call
+\lang hebrew
+, כאשר עוברים מ-
+\lang english
+user mode
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל-
+\lang english
+kernel mode
+\lang hebrew
+.
+ היעזרו באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dry2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/dry2.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+פונקציית המעטפת )באיזור 
+\color green
+הירוק
+\color inherit
+( אינה יכולה להעביר פרמטרים דרך המחסנית לשגרת הטיפול בפסיקה )באיזור 
+\color red
+האדום
+\color inherit
+(.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dry2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ציינו את כל הפלטים האפשריים )
+\lang english
+stdout
+\lang hebrew
+( של קטע הקוד באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dry3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ )
+\series bold
+נמקו
+\series default
+(
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+pid_t pid = fork)(;
+\end_layout
+
+\begin_layout Plain Layout
+
+if )pid < 0( exit)1(;
+\end_layout
+
+\begin_layout Plain Layout
+
+else if )pid < 0( }
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf)
+\begin_inset Quotes eld
+\end_inset
+
+%d
+\begin_inset Quotes erd
+\end_inset
+
+, getpid)((;
+\end_layout
+
+\begin_layout Plain Layout
+
+	exit)0(;
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+else }
+\end_layout
+
+\begin_layout Plain Layout
+
+	char *argv][ = }
+\begin_inset Quotes eld
+\end_inset
+
+sleep
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+1
+\begin_inset Quotes erd
+\end_inset
+
+, NULL{;
+\end_layout
+
+\begin_layout Plain Layout
+
+	execv)
+\begin_inset Quotes eld
+\end_inset
+
+/bin/sleep
+\begin_inset Quotes erd
+\end_inset
+
+, argv(;
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf)
+\begin_inset Quotes eld
+\end_inset
+
+%d
+\begin_inset Quotes erd
+\end_inset
+
+, getpid)((;
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+קטע קוד קצר.
+ הניחו כי 
+\begin_inset Formula $\text{pid}\left(\text{father}\right)=8,\text{pid}\left(\text{child}\right)=13$
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dry3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ציינו את כל הפלטים האפשריים )
+\lang english
+stdout
+\lang hebrew
+( של קטע הקוד באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dry4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ )
+\series bold
+נמקו
+\series default
+(
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+int value = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+if )fork)( != 0( }
+\end_layout
+
+\begin_layout Plain Layout
+
+	wait)&value(;
+\end_layout
+
+\begin_layout Plain Layout
+
+	value = WEXITSTATUS)value(;
+\end_layout
+
+\begin_layout Plain Layout
+
+	value += 3;
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+printf)
+\begin_inset Quotes erd
+\end_inset
+
+%d
+\backslash
+n
+\begin_inset Quotes erd
+\end_inset
+
+, value(;
+\end_layout
+
+\begin_layout Plain Layout
+
+value += 4;
+\end_layout
+
+\begin_layout Plain Layout
+
+exit)value(;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+קטע קוד קצר.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dry4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חלק מעשי
+\end_layout
+
+\begin_layout Subsection*
+הנחיות
+\end_layout
+
+\begin_layout Standard
+בחלק זה תממשו תוכנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+shell
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פשוטה, שתאפשר לחמשתמש להריץ פקודות בחזית וברקע )ראו איור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:run_front_back"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(.
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/run_front_back.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+הרצה בחזית וברקע.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:run_front_back"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+התוכנית תדפיס למסך את המחרוזת 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+\lang english
+my-shell>
+\family default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ לפני קבלת הפקודה הבאה מהמשתמש.
+\end_layout
+
+\begin_layout Itemize
+לאחר שהמשתמש הקליד את הפקודה )למשל 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+\lang english
+mkdir newfolder
+\family default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+(, התוכנית תריץ את הפקודה.
+\end_layout
+
+\begin_layout Itemize
+אם הפרמטר האחרון בפקודה שהוקלדה היה התו 
+\begin_inset Quotes eld
+\end_inset
+
+&
+\begin_inset Quotes erd
+\end_inset
+
+, התוכנית תריץ את הפקודה ברקע, ואחרת בחזית.
+\end_layout
+
+\begin_layout Itemize
+התוכנית תסיים את ריצה כאשר המשתמש יקליד 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+\lang english
+exit
+\family default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בנוסף, עליכם לממש פקודה נוספת בשם 
+\begin_inset Quotes eld
+\end_inset
+
+
+\family typewriter
+\lang english
+history
+\family default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+, בה יודפסו למסך כל הפקודות שהמשתמש הקליד בעבר.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כל פקודה בשורה נפרדת, יחד עם המספר הסידורי שלה.
+\end_layout
+
+\begin_layout Itemize
+הפקודות יודפסו בסדר יורד מזמן ביצוע הפקודה )הפקודה האחרונה תודפסה בשורה
+ הראשונה(.
+\end_layout
+
+\begin_layout Itemize
+דוגמת הרצה:
+\begin_inset Formula 
+\[
+\begin{array}{cccc}
+\text{date} &  & 5 & \text{\text{history}}\\
+\text{dir1\;mkdir} &  & 4 & \text{\&\;hi\;echo}\\
+\text{dir2\;mkdir} & \Rightarrow & 3 & \text{dir2\;mkdir}\\
+\text{\&\;hi\;echo} &  & 2 & \text{dir1\;mkdir}\\
+\text{history} &  & 1 & \text{date}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+\emph on
+הערות.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הרצאה לדוגמא ב
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "לינק"
+target "https://www.youtube.com/watch?v=5P47vk-XWhA"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+.
+\end_layout
+
+\begin_layout Enumerate
+מסופק לכם קובץ שלד של התוכנית -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+myshell.c
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+השתמשו 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ב-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar under
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "strtok"
+target "https://cplusplus.com/reference/cstring/strtok/"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+ כדי להפריד את הפקודה לחלקיה השונים, ע
+\begin_inset Quotes erd
+\end_inset
+
+י שימוש ברווח )
+\lang english
+whitespace
+\lang hebrew
+( כמפריד )
+\lang english
+delimiter
+\lang hebrew
+( בין חלקי הפקודה.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+לא דרוש מכם לממש בעצמכם פקודות כגון 
+\family typewriter
+\series default
+\lang english
+ls
+\family default
+\series bold
+\lang hebrew
+ או 
+\family typewriter
+\series default
+\lang english
+mkdir
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+עליכם להשתמש ב-
+\family typewriter
+\lang english
+execvp
+\family default
+\lang hebrew
+ כדי להריץ את הפקודות שקיבלתם מהמשתמש )
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "דוגמא"
+target "https://stackoverflow.com/questions/27541910/how-to-use-execvp"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+ לשימוש ב-
+\family typewriter
+\lang english
+execvp
+\family default
+\lang hebrew
+(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+על 
+\family typewriter
+\lang english
+history
+\family default
+\lang hebrew
+ לכלול גם פקודות שכשלו ולא התבצעו, ואת 
+\family typewriter
+\lang english
+history
+\family default
+\lang hebrew
+ בעצמה.
+\end_layout
+
+\begin_layout Enumerate
+שימו לב לפורמט ההדפסה של ההיסטוריה, כמפורט לעיל.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+לא דרוש מכם לתמוך בפונקציות נוספות של ה-
+\lang english
+shell
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלא ניתן לבצע ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\family typewriter
+\series default
+\lang english
+exec
+\family default
+\series bold
+\lang hebrew
+, כמו
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pipes
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cd
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כדי לדעת האם פקודה 
+\family typewriter
+\lang english
+x
+\family default
+\lang hebrew
+ ניתנת לביצוע ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\family typewriter
+\lang english
+exec
+\family default
+\lang hebrew
+, הריצו ב-
+\lang english
+shell
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family typewriter
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+which x
+\family default
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+הפקודה ניתנת לביצוע אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ קיבלתם את המסלול לקובץ שנמצא ב-
+\lang english
+shell
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)הריצו למשל 
+\family typewriter
+\lang english
+which history
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב-
+\lang english
+shell
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+רגיל, ותראו את התוצאה(.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מספיק שהרישא של 
+\family typewriter
+\lang english
+history
+\family default
+\lang hebrew
+ תהיה חוקית כדי שהפקודה תתבצע, אך בהיסטוריה היא תישמר בדיוק כפי שהמשתמש
+ הקליד.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+למשל, עבור הקלט 
+\family typewriter
+\lang english
+history12
+\family default
+\lang hebrew
+, הפקודה תתבצע ותישמר בהיסטוריה כ-
+\family typewriter
+\lang english
+history12
+\family default
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+בכל מקרה של שגיאה השתמשו בפקודה 
+\family typewriter
+\lang english
+perror(
+\begin_inset Quotes eld
+\end_inset
+
+error
+\begin_inset Quotes erd
+\end_inset
+
+)
+\family default
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+קומפילציה והרצה
+\end_layout
+
+\begin_layout Standard
+באופן דומה לתרגיל בית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, הדרו את התרגיל באמצעות הפקודה
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\lang english
+gcc -Werror -std=c99 myshell.c -o myshell
+\end_layout
+
+\begin_layout Standard
+הריצו את התוכנית באמצעות
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\lang english
+./myshell
+\end_layout
+
+\begin_layout Subsection*
+הגשה
+\end_layout
+
+\begin_layout Standard
+הגשה במודל, לפי הפורמט הבא:
+\end_layout
+
+\begin_layout Enumerate
+עליכם ליצור קובץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)השתמשו ב-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gzip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלבד( בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hw1_id1_id2.zip
+\lang hebrew
+, כאשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+id1, id2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם מספרי תעודות הזהות של המגישים.
+\end_layout
+
+\begin_layout Enumerate
+קובץ ה-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מכיל 
+\series bold
+אך ורק
+\series default
+ את הקבצים ההבאים, 
+\series bold
+ללא תתי-ספריות
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\text{myshell.c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{dry.pdf}$
+\end_inset
+
+, שמכיל את התשובות לחלק התיאורטי - 
+\series bold
+קובץ
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pdf
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלבד
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{submitters.txt}$
+\end_inset
+
+, שמכיל את מספרי הזהות והשמות של מגישי התרגיל, מופרדים ע
+\begin_inset Quotes erd
+\end_inset
+
+י פסיק.
+ למשל:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\lang english
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "80col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+\lang english
+Bill Gates,bill@microsoft.com,123456789
+\begin_inset Newline newline
+\end_inset
+
+Linus Torvalds,linus@gmail.com,234567890
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+צרו את קובץ ה-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באמצעות הפקודה 
+\family typewriter
+\lang english
+zip hw1_id1_id2.zip myshell.c dry.pdf submitters.txt
+\family default
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+הגישה את ה-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרך המודל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
