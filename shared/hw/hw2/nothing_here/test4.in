@@ -1,0 +1,22 @@
+open 0 0 read
+open 1 1 write
+open 1 2 read|write
+ioctl 0 zero
+ioctl 1 zero
+ioctl 2 zero
+ioctl 0 change_key 0
+ioctl 1 change_key 0
+ioctl 2 change_key 0
+ioctl 0 change_read_state decrypt
+ioctl 1 change_read_state decrypt
+ioctl 2 change_read_state decrypt
+write 0 "Hello World"
+read 0 10
+write 1 "Hello World"
+write 1 "Hello World"
+read 1 10
+write 2 "Hello World"
+close 0
+close 1
+close 2
+exit

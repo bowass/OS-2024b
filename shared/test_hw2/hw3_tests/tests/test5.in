@@ -1,0 +1,39 @@
+open 0 0 read|write
+ioctl 0 zero
+ioctl 0 change_key 0
+write 0 "23456789ABCDEFG"
+ioctl 0 change_read_state decrypt
+lseek 0 0
+read 0 15
+ioctl 0 change_read_state raw
+lseek 0 0
+read 0 15
+ioctl 0 change_key 1
+lseek 0 0
+write 0 "23456789ABCDEFG"
+ioctl 0 change_read_state decrypt
+lseek 0 0
+read 0 15
+ioctl 0 change_read_state raw
+lseek 0 0
+read 0 15
+ioctl 0 change_key 50
+lseek 0 0
+write 0 "23456789ABCDEFG"
+ioctl 0 change_read_state decrypt
+lseek 0 0
+read 0 15
+ioctl 0 change_read_state raw
+lseek 0 0
+read 0 15
+ioctl 0 change_key 128
+lseek 0 0
+write 0 "23456789ABCDEFG"
+ioctl 0 change_read_state decrypt
+lseek 0 0
+read 0 15
+ioctl 0 change_read_state raw
+lseek 0 0
+read 0 15
+close 0
+exit

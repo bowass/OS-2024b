@@ -1054,7 +1054,8 @@ mkdir newfolder
 \begin_inset Quotes erd
 \end_inset
 
-, התוכנית תריץ את הפקודה ברקע, ואחרת בחזית.
+, התוכנית תריץ את הפקודה ברקע, ואחרת בחזית )עליכם להריץ ברקע רק אם יש רווח
+ אחד לפחות בין הפקודה ובין &(.
 \end_layout
 
 \begin_layout Itemize

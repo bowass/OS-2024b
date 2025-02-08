@@ -1,0 +1,32 @@
+ID,Penalty,Penalty Notes,Wet grade,Wet Notes,Dry grade,Dry Notes,final
+214709214,0,,91,,6,q2 wrong: #of rows depends on virtual address space,97
+216220715,0,,91,,6,q2 wrong: #of rows depends on virtual address space,97
+214894263,0,,91,,9,q2 wrong: #of rows depends on virtual address space; printing bonus +5,100
+215546144,0,,91,,12,q2: wrong log calc; printing bonus +5,103
+317930766,0,,91,,12,q2: wrong log calc; printing bonus +5,103
+215549544,0,,84, --newline-- test number 8 failed,14,printing bonus +5,98
+216430272,0,,84, --newline-- test number 8 failed,14,printing bonus +5,98
+215973181,0,,91,,14,printing bonus +5,105
+327949434,0,,91,,14,printing bonus +5,105
+216057059,0,,91,,10,"q1b: if it can be wrong in some cases, it is wrong; q2: we only save page number - not full page; printing bonus +5",101
+215822545,0,,91,,10,"q1b: if it can be wrong in some cases, it is wrong; q2: we only save page number - not full page; printing bonus +5",101
+216298596,0,,91,,9,q2: wrong - each row contains a physical page number; printing bonus +5,100
+327623781,0,,91,,9,q2: wrong - each row contains a physical page number; printing bonus +5,100
+326143997,0,,91,,10,"q2: wrong - 26 bits, not Bytes; printing bonus +5",101
+325826303,0,,91,,10,"q2: wrong - 26 bits, not Bytes; printing bonus +5",101
+326144540,0,,91,,9,"q2: wrong, also unable to understand the answer; printing bonus +5",100
+330956095,0,,91,,9,"q2: wrong, also unable to understand the answer; printing bonus +5",100
+326816774,0,,91,,9,q2: wrong; printing bonus +5,100
+215447194,0,,91,,9,q2: wrong; printing bonus +5,100
+327615787,0,,91,,11,q2: wrong - each row contains a physical page number; printing bonus +5,102
+327949517,0,,91,,11,q2: wrong - each row contains a physical page number; printing bonus +5,102
+327946109,0,,91,,11,q2: wrong - #of rows depends on virtual address space; printing bonus +5,102
+328425632,0,,91,,11,q2: wrong - #of rows depends on virtual address space; printing bonus +5,102
+327948063,0,,91,,11,"q1b: if it can be wrong in some cases, it is wrong; q2: #of rows depends on vritual address space; printing bonus +5",102
+216282061,0,,91,,11,"q1b: if it can be wrong in some cases, it is wrong; q2: #of rows depends on vritual address space; printing bonus +5",102
+328356126,0,,91,,11,q2: wrong - #of rows depends on virtual address space; also write in units of MB GB etc; printing bonus +5,102
+327618914,0,,91,,11,q2: wrong - #of rows depends on virtual address space; also write in units of MB GB etc; printing bonus +5,102
+328358635,0,,91,,11,q2: wrong - #of rows depends on virtual address space; printing bonus +5,102
+215397571,0,,91,,11,q2: wrong - #of rows depends on virtual address space; printing bonus +5,102
+328439781,-5,,91,,11,q2: wrong - #of rows depends on virtual address space; printing bonus +5; compilation error penalty (-5),97
+327872347,-5,,91,,11,q2: wrong - #of rows depends on virtual address space; printing bonus +5; compilation error penalty (-5),97

@@ -1,0 +1,35 @@
+ls: cannot access './todo': No such file or directory
+error: No such file or directory
+my-shell> 1 history1232
+my-shell> 2 history 1
+1 history1232
+my-shell> my-shell> 1 history1232
+my-shell> 2 history 1
+1 history1232
+my-shell> my-shell> my-shell> 5 history?
+4 ls ./todo
+3 LS &
+2 history 1
+1 history1232
+my-shell> 6 history!
+5 history?
+4 ls ./todo
+3 LS &
+2 history 1
+1 history1232
+my-shell> my-shell> error: No such file or directory
+my-shell> 1 history1232
+my-shell> 2 history 1
+1 history1232
+my-shell> my-shell> my-shell> 5 history?
+4 ls ./todo
+3 LS &
+2 history 1
+1 history1232
+my-shell> 6 history!
+5 history?
+4 ls ./todo
+3 LS &
+2 history 1
+1 history1232
+my-shell> 

@@ -1,0 +1,29 @@
+error: No such file or directory
+my-shell> 1 	 history
+my-shell> 2 	 history
+1 	 history
+my-shell> error: No such file or directory
+my-shell> 1 	 history
+my-shell> 2 	 history
+1 	 history
+my-shell> my-shell> 4 	 history
+3 	 !   2
+2 	 history
+1 	 history
+my-shell> sleep: invalid time interval `2&'
+Try `sleep --help' for more information.
+my-shell> 1 	 history
+my-shell> 2 	 history
+1 	 history
+my-shell> my-shell> 4 	 history
+3 	 !   2
+2 	 history
+1 	 history
+my-shell> my-shell> my-shell> 7 	 history
+6 	 sleep 2&
+5 	 !   2
+4 	 history
+3 	 !   2
+2 	 history
+1 	 history
+my-shell> 

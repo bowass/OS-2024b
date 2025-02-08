@@ -1,0 +1,7 @@
+ls: ./todo/temp: No such file or directory
+ls: ./todo: No such file or directory
+my-shell> my-shell> my-shell> my-shell> 4 	 history
+3 	 touch myfile.txt
+2 	 mkdir temp
+1 	 rm ./temp -rf
+my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> 

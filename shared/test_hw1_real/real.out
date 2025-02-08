@@ -1,0 +1,56 @@
+error: No such file or directory
+my-shell> 1 	 history1232
+my-shell> 2 	 history 1
+1 	 history1232
+my-shell> a.out
+myshell
+myshell.c
+myshell_f
+myshell_f.c
+myshell_skeleton.c
+submitters.txt
+test1.in
+test1.out
+test2.in
+test2.out
+test3.in
+test3.out
+test4.in
+test4.out
+test5.in
+test5.out
+test6.in
+test6.out
+test_temp1.out
+test_temp2.out
+test_temp3.out
+error: No such file or directory
+my-shell> 1 	 history1232
+my-shell> 2 	 history 1
+1 	 history1232
+my-shell> my-shell> my-shell> 5 	 history?
+4 	 ls ./todo
+3 	 LS &
+2 	 history 1
+1 	 history1232
+my-shell> 6 	 history!
+5 	 history?
+4 	 ls ./todo
+3 	 LS &
+2 	 history 1
+1 	 history1232
+my-shell> my-shell> 1 	 history1232
+my-shell> 2 	 history 1
+1 	 history1232
+my-shell> my-shell> my-shell> 5 	 history?
+4 	 ls ./todo
+3 	 LS &
+2 	 history 1
+1 	 history1232
+my-shell> 6 	 history!
+5 	 history?
+4 	 ls ./todo
+3 	 LS &
+2 	 history 1
+1 	 history1232
+my-shell> my-shell> 

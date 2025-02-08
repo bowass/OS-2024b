@@ -1,0 +1,8145 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+% Convert the Lyx colors into more pleasent colors:
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{12,97,197}
+\definecolor{green}{RGB}{0,128,40}
+\definecolor{red}{RGB}{235,16,16}
+\definecolor{brown}{RGB}{154,58,0}
+\definecolor{orange}{RGB}{231,135,26}
+\definecolor{purple}{RGB}{94,53,177}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\usepackage{listings}
+\lstset{basicstyle=\fontfamily{pzc}\selectfont} %Zapf
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4,
+    language=C
+}
+\end_preamble
+\use_default_options true
+\begin_modules
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "Hadasim CLM"
+\font_sans "default" "David"
+\font_typewriter "default" "Miriam Fixed"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 0 0 18 -1
+\bullet 1 0 20 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\size giant
+מערכות הפעלה - תרגיל בית
+\family roman
+\series medium
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+אוניברסיטת חיפה
+\end_layout
+
+\begin_layout Date
+סמסטר אביב תשפ
+\begin_inset Quotes erd
+\end_inset
+
+ד
+\end_layout
+
+\begin_layout Center Header
+מערכות הפעלה - אוניברסיטת חיפה - תרגיל בית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+לתרגיל זה שני חלקים - תיאורטי ומעשי.
+\end_layout
+
+\begin_layout Enumerate
+חלק תיאורטי )
+\numeric on
+
+\begin_inset Formula $24$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות(, בו יהיה עליכם לענות על מספר שאלות תיאורטיות.
+\end_layout
+
+\begin_layout Enumerate
+חלק מעשי )
+\begin_inset Formula $76$
+\end_inset
+
+ נקודות(, בו יהיה עליכם לממש דרייבר באמצעות מודול.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חלק תיאורטי
+\end_layout
+
+\begin_layout Standard
+
+\color red
+ניתן לנמק את התשובות, אך אינכם מחויבים.
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $P$
+\end_inset
+
+ קבוצת כל ה-
+\lang english
+pid
+\lang hebrew
+-ים של התהליכים הפעילים ברגע נתון )לינוקס(.
+ נגדיר 
+\begin_inset Formula $G=\left(P,E\right)$
+\end_inset
+
+, כך ש-
+\begin_inset Formula $\left(p_{1},p_{2}\right)\in E$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ התהליך עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pid
+\lang hebrew
+ 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ הוא ההורה )
+\lang english
+real parent
+\lang hebrew
+( של תהליך עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+pid
+\lang hebrew
+ 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+.
+ קבעו את נכונות כל אחת מהטענות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ הוא בהכרח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+DAG
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+במידה ונתעלם מכיווני הקשתות, 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא בהכרח עץ.
+\end_layout
+
+\begin_layout Enumerate
+במידה ונתעלם מכיווני הקשתות, 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא בהכרח יער.
+\end_layout
+
+\begin_layout Enumerate
+במידה ונריץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+BFS
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהקודקוד 
+\begin_inset Formula $0$
+\end_inset
+
+, ייתכן שלא נבקר בכל הקודקוד.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $x$
+\end_inset
+
+ משתנה גלובלי שערכו 
+\begin_inset Formula $0$
+\end_inset
+
+, ויהיו 
+\begin_inset Formula $p_{1},p_{2}$
+\end_inset
+
+ תהליכים )בלינוקס( שמריצים את הפקודה 
+\begin_inset Formula $\text{printf}\left("\%d",\&x\right)$
+\end_inset
+
+.
+ קבעו את נכונות כל אחת מהטענות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ה-
+\lang english
+pid
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של שני התהליכים בהכרח זהה.
+\end_layout
+
+\begin_layout Enumerate
+ה-
+\lang english
+pid
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של שני התהליכים בהכרח שונה.
+\end_layout
+
+\begin_layout Enumerate
+הפלט של שני התהליכים )
+\lang english
+stdout
+\lang hebrew
+( בהכרח זהה.
+\end_layout
+
+\begin_layout Enumerate
+הפלט של שני התהליכים )
+\lang english
+stdout
+\lang hebrew
+( בהכרח שונה.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+חלק מעשי
+\end_layout
+
+\begin_layout Standard
+בתרגיל זה תממשו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+device driver
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור התקן הצפנה )
+\lang english
+encryption device
+\lang hebrew
+( באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+LKM
+\lang hebrew
+.
+ בעולם האמיתי, ייתכן שהתקן ההצפנה הוא רכיב חומרתי, שמבצע הצפנה מורכבת באופן
+ מהיר.
+ בתרגיל זה תממשו הצפנה בסיסית שתדמה זאת, ומהירות ההצפנה אינה משנה לנו.
+\end_layout
+
+\begin_layout Subsection*
+הצפנות
+\end_layout
+
+\begin_layout Subsubsection*
+צופן קיסר )
+\lang english
+Caeser Cipher
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+בהינתן מחרוזת 
+\begin_inset Formula $s$
+\end_inset
+
+ ומפתח הצפנה 
+\begin_inset Formula $k$
+\end_inset
+
+, ההתקן מזיז )
+\lang english
+shift
+\lang hebrew
+( את ערכו של כל תו ב-
+\begin_inset Formula $s$
+\end_inset
+
+ לערך הנמצא 
+\begin_inset Formula $k$
+\end_inset
+
+ מקומות אחריו בטבלת ה-
+\lang english
+ASCII
+\lang hebrew
+, באופן ציקלי.
+\end_layout
+
+\begin_layout Itemize
+כלומר, עבור מחרוזת 
+\begin_inset Formula $s$
+\end_inset
+
+ באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ ומפתח הצפנה 
+\begin_inset Formula $k$
+\end_inset
+
+, פעולות הצפנה ופענוח תבוצענה כמתואר באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:encdec_caeser"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// encode
+\end_layout
+
+\begin_layout Plain Layout
+
+for (i = 0; i < n; i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	s[i] = (s[i] + k) % 128;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+// decode
+\end_layout
+
+\begin_layout Plain Layout
+
+for (i = 0; i < n; i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	s[i] = (s[i] + 128 - k) % 128;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+צופן קיסר: הצפנה ופענוח.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:encdec_caeser"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+צופן
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR
+\lang hebrew
+ )
+\lang english
+XOR Cipher
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Itemize
+בהינתן מחרוזת 
+\begin_inset Formula $s$
+\end_inset
+
+ ומפתח הצפנה 
+\begin_inset Formula $k$
+\end_inset
+
+, ההתקן מחליף כל תו 
+\begin_inset Formula $c$
+\end_inset
+
+ ב-
+\begin_inset Formula $s$
+\end_inset
+
+ בתוצאת ה-
+\lang english
+XOR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset Formula $c$
+\end_inset
+
+ ו-
+\begin_inset Formula $k$
+\end_inset
+
+: 
+\begin_inset Formula $c\oplus k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+כלומר, עבור מחרוזת 
+\begin_inset Formula $s$
+\end_inset
+
+ באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ ומפתח הצפנה 
+\begin_inset Formula $k$
+\end_inset
+
+, פעולות הצפנה ופענוח תבוצענה כמתואר באיור 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:encdec_xor"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// encode + decode
+\end_layout
+
+\begin_layout Plain Layout
+
+for (i = 0; i < n; i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	s[i] = s[i] ^ k;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+צופן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR
+\lang hebrew
+: הצפנה ופענוח.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:encdec_xor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מימוש מנהל ההתקן
+\end_layout
+
+\begin_layout Standard
+בתרגיל תממשו מנהל התקן שיתמוך בשני סוגי התקני תווים: התקן מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caesar Cipher
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+והתקן מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR Cipher
+\lang hebrew
+.
+ עבור כל אחד משני סוגי ההתקנים, מנהל ההתקן ינהל חוצץ נתונים )
+\lang english
+data buffer
+\lang hebrew
+( שאליו משתמש הקצה יכתוב מידע כדי להצפין מחרוזות, וממנו יקרא מידע כדי לפענח
+ מחדש את המידע המוצפן.
+ בנוסף ליכולת לכתוב ולקרוא מההתקן, נרצה ששני ההתקנים יאפשרו למשתמש לבצע
+ את הפעולות המיוחדות הבאות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+Set Encryption Key
+\lang hebrew
+: הגדרת מפתח ההצפנה שישומש להצפנה/פענוח.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+שימו לב
+\series default
+, תכונה זו צריכה להיות מוגדרת ב-
+\lang english
+file object
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמתאר את הקשר העבודה של המשתמש עם ההתקן.
+\end_layout
+
+\begin_layout Itemize
+כלומר, אם פתחנו את אותו ההתקן )למשל, את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caesar Cipher
+\lang hebrew
+( באמצעות שתי קריאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+open
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נפרדות )כל אחת החזירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שונה(, אז יש לאפשר להגדיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+encryption key
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ייחודי עבור כל אחד מה-
+\lang english
+file objects
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמוצבעים על ידי ה-
+\lang english
+file descriptors
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+Set Read State
+\lang hebrew
+: עלינו לאפשר למשתמש להגדיר האם כאשר תבוצע קריאה מההתקן, ייקרא המידע המוצפן
+ ללא פענוח )
+\lang english
+raw read
+\lang hebrew
+(, או שיקרא את המידע המוצפן לאחר פענוח )
+\lang english
+decrypt read
+\lang hebrew
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+שימו לב
+\series default
+, גם תכונה זו צריכה להיות מוגדרת ב-
+\lang english
+file object
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמתאר את הקשר העבודה של המשתמש עם ההתקן, בדומה לתכונה הקודמת.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+Zero Buffer
+\lang hebrew
+: עלינו לאפשר למשתמש לבקש לאפס את חוצץ הנתונים של ההתקן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עליכם לכתוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+kernel module
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שירשום מנהל התקן חדש בעל מספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+major
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ המוקצה דינמית, לממש שני 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+file operation sets
+\lang hebrew
+: אחד עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caesar Cipher
+\lang hebrew
+, אשר יוגדר ב-
+\lang english
+Minor 0
+\lang hebrew
+, ואחד עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR Cipher
+\lang hebrew
+, שיוגדר ב-
+\lang english
+Minor 1
+\lang hebrew
+.
+ להלן קווים מנחים למימוש המודול )תוכלו לממש כרצונכם(:
+\end_layout
+
+\begin_layout Enumerate
+הגדירו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+module parameter
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+memory_size
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+המשתנה יכיל את גודלם של שני החוצצים שיאכסנו את המחרוזת המוצפנת, ויקבע בעת
+ טעינת המודול.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ממשו את הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+init_module
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כפי שראינו בתרגול, פונקציה זו נקראת כאשר המודול נטען לגרעין )למשל עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+insmod
+\lang hebrew
+(.
+ מרכיבי המימוש:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+רישום מנהל ההתקן ושיוך למספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Major
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+register_chrdev
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+הקצאת מקום לשני חוצצים שיאכסנו את המידע שנכתב לשני ההתקנים )גודלם נקבע ע
+\begin_inset Quotes erd
+\end_inset
+
+פ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+memory_size
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+שימו לב
+\series default
+, המודול עובד בתוך הגרעין: להקצאת זיכרון בגרעין השתמשו ב-
+\lang english
+kmalloc
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)מידע נוסף 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "כאן"
+target "https://archive.kernel.org/oldlinux/htmldocs/kernel-api/API-kmalloc.html"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+(.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+ממשו את הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+cleanup_module
+\lang hebrew
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+כפי שראינו בתרגול, פונקציה זו נקראת כאשר מודול נפרק מהגרעין )למשל עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+rmmod
+\lang hebrew
+(.
+ מרכיבי המימוש:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הסרת מנהל ההתקן ממספר ה-
+\lang english
+Major
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המשויך אליו באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+unregister_chrdev
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+שחרור הזיכרון שהוקצה לחוצצים של ההתקנים.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+שימו לב
+\series default
+, לשחרור זיכרון שהוקצה דינמית בגרעין השתמשו ב-
+\lang english
+kfree
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)מידע נוסף 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "כאן"
+target "https://archive.kernel.org/oldlinux/htmldocs/kernel-api/API-kfree.html"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+(.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+ממשו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+file operations
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור כל התקן.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+לכל התקן, עליכם לממש את הפונקציות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+open, release, write, read, ioctl
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+שימו לב
+\series default
+, למרות שלכל התקן יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+file operations
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+משלו, ניתן )ואף נוח יותר( לממש את הפעולות באופן כללי כך שיתאימו לשני ההתקנים
+ )למשל, המימוש של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+open, release
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו-
+\lang english
+ioctl
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זהה לחלוטין בשני ההתקנים(.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+מימוש
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+file operations
+\end_layout
+
+\begin_layout Itemize
+מימוש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+open
+\lang hebrew
+.
+ עליכם לבצע את הפעולות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לבחור את אובייקט ה-
+\lang english
+file_operations
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המתאים )
+\lang english
+Caesar Cipher
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR Cipher
+\lang hebrew
+(, בהתאם ל-
+\lang english
+Minor
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ששמור ב-
+\lang english
+inode object
+\lang hebrew
+.
+\begin_inset Newline newline
+\end_inset
+
+ 
+\color red
+במידה וה-
+\lang english
+minor
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+אינו תקין, יש להחזיר 
+\begin_inset Formula $\text{-ENODEV}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+להקצות מקום ב-
+\lang english
+private data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+file object
+\lang hebrew
+, בו נאחסן את ה-
+\lang english
+key
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואת ה-
+\lang english
+read state
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)עליכם ליצור מבנה נתונים משלכם שמאחסן את שני השדות, ולגרום ל-
+\lang english
+private data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+להצביע על מופע שלו(.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מימוש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+release
+\lang hebrew
+.
+ עליכם לבצע את הפעולות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לשחרר את המקום שהוקצה ב-
+\lang english
+private data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+file object
+\lang hebrew
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מימוש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ioctl
+\lang hebrew
+.
+ עליכם לבצע את הפעולות הבאות )סוג הפקודה והערכים המתאימים מתקבלים כפרמטרים
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+ioctl
+\lang hebrew
+(:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לבדוק האם סוג הפקודה שנשלחה הינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+change key
+\lang hebrew
+.
+ אם כן, יש לשמור בשדה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+key
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+private data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+את ה-
+\lang english
+key
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+החדש.
+\end_layout
+
+\begin_layout Enumerate
+לבדוק האם סוג הפקודה שנשלחה הינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+change read state
+\lang hebrew
+.
+ אם כן, יש לשמור בשדה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+read state
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+private data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+את 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ה-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+read state
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+החדש.
+\end_layout
+
+\begin_layout Enumerate
+לבדוק האם סוג הפקודה שנשלחה הינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+zero
+\lang hebrew
+.
+ אם כן, יש לאפס את חוצץ הנתונים של ההתקן.
+ שימו לב: אם תהליך כלשהו פתח את אותו התקן מספר רב של פעמים )מספר קריאות
+ ל-
+\lang english
+open
+\lang hebrew
+(, לאחר שהתבצעה פקודת איפוס, ניסיון קריאה מההתקן ע
+\begin_inset Quotes erd
+\end_inset
+
+י כל אחד מה-
+\lang english
+file descriptors
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+השונים יחזירו אפסים.
+ 
+\color red
+במידה וה-
+\lang english
+minor
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+של ההתקן אינו תקין, יש להחזיר 
+\begin_inset Formula $\text{-ENODEV}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+בקובץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+encdec.h
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מוגדרים קבועים )התבוננו בו(: עליכם להשתמש בהם כדי להבדיל בין הפקודות השונות
+ והארגומנטים שלהם.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מימוש גרסה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+write
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caesar Cipher
+\lang hebrew
+.
+ עליכם לבצע את הפעולות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לכתוב את תוכן 
+\series bold
+החוצץ שהמשתמש העביר
+\series default
+, לתוך 
+\series bold
+החוצץ של התקן
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caesar Cipher
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באופן מוצפן כמתואר לעיל.
+ שימו לב, עליכם לכתוב את המידע החל מהמיקום הבא לכתיבה )מתקבל כפרמטר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+loff_t 
+\begin_inset Formula $\ast$
+\end_inset
+
+f_pos
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+write
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Enumerate
+אם לא ניתן לבצע כתיבה נוספת להתקן ההצפנה, משום שערכו של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+f_pos
+\lang hebrew
+
+\begin_inset Formula $\ast$
+\end_inset
+
+ שווה ל-
+\lang english
+memory_size
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של חוצץ ההצפנה של ההתקן, אז יש להחזיר את השגיאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+-ENOSPC
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+כאשר אתם מבצעים את העתקת המידע מהחוצץ של המשתמש )שנמצא ב-
+\lang english
+user space
+\lang hebrew
+( אל חוצץ ההתקן )שנמצא ב-
+\lang english
+kernel space
+\lang hebrew
+(, עליכם להשתמש בפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+copy_from_user
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כאשר מאפשרת להעתיק כך מידע באופן בטוח )מידע נוסף 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "כאן"
+target "https://www.cs.bham.ac.uk/~exr/lectures/opsys/12_13/docs/kernelAPI/r4081.html#:~:text=copy_from_user%201%20Synopsis%20unsigned%20long%20copy_from_user%20%28void%20%2A,copied.%20On%20success%2C%20this%20will%20be%20zero.%20"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+(.
+ 
+\color red
+במידה ו-
+\lang english
+copy_from_user
+\lang hebrew
+ נכשלת, על הפונקציה להחזיר 
+\begin_inset Formula $\text{-EFAULT}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לאחר סיום הכתיבה, עליכם להוסיף ל-
+\lang english
+f_pos
+\lang hebrew
+
+\begin_inset Formula $\ast$
+\end_inset
+
+ את מספר התווים שכתבתם לחוצץ, כך שבפעם הבאה נכתוב במקום הפנוי הבא, ולא נדרוס
+ תווים שכבר נכתבו.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+שימו לב
+\series default
+, גם אם אותו התקן נפתח ע
+\begin_inset Quotes erd
+\end_inset
+
+י תהליך מספר רב של פעמים )כמה קריאות ל-
+\lang english
+open
+\lang hebrew
+(, כל פעולות הכתיבה שיופנו ל-
+\lang english
+file descriptors
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהתקבלו מקריאות ה-
+\lang english
+open
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יכתבו כולן לאותו החוצץ של ההתקן: יש רק שני חוצצים, אחד לכל התקן.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מימוש גרסה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+write
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR Cipher
+\lang hebrew
+, באופן דומה ל-
+\lang english
+Caesar Cipher
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+מימוש גרסה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+read
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caesar Cipher
+\lang hebrew
+.
+ עליכם לבצע את הפעולות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לקרוא את תוכן 
+\series bold
+החוצץ של התקן
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Caesar Cipher
+\series default
+\lang hebrew
+, לתוך 
+\series bold
+החוצץ של המשתמש
+\series default
+ באופן 
+\series bold
+מפוענח
+\series default
+ )
+\lang english
+decrypted
+\lang hebrew
+( או 
+\series bold
+חשוף
+\series default
+ )
+\lang english
+raw
+\lang hebrew
+(, בהתאם ל-
+\lang english
+read state
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שנמצא ב-
+\lang english
+private data
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+file object
+\lang hebrew
+.
+ שימו לב, עליכם לקרוא את המידע החל מהמיקום הבא לקריאה.
+\end_layout
+
+\begin_layout Enumerate
+אם לא ניתן לבצע קריאה נוספת מהתקן ההצפנה, משום שערכו של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+f_pos
+\lang hebrew
+
+\begin_inset Formula $\ast$
+\end_inset
+
+ שווה ל-
+\lang english
+memory_size
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של חוצץ ההצפנה של ההתקן, יש להחזיר את השגיאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+EINVAL
+\lang hebrew
+-.
+\end_layout
+
+\begin_layout Enumerate
+כאשר מבצעים העתקת מידע מהחוצץ של ההתקן )שנמצא ב-
+\lang english
+kernel space
+\lang hebrew
+( אל החוצץ של המשתמש )שנמצא ב-
+\lang english
+user space
+\lang hebrew
+(, עליכם להשתמש בפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+copy_to_user
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אשר מאפשרת להעתיק מידע מ-
+\lang english
+kernel space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+user space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באופן בטוח )מידע נוסף 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "כאן"
+target "https://www.cs.bham.ac.uk/~exr/lectures/opsys/13_14/docs/kernelAPI/r4037.html"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+(.
+ 
+\color red
+במידה ו-
+\lang english
+copy_to_user
+\lang hebrew
+ נכשלת, על הפונקציה להחזיר 
+\begin_inset Formula $\text{-EFAULT}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לאחר סיום הקריאה, עליכם להוסיף ל-
+\lang english
+f_pos
+\lang hebrew
+
+\begin_inset Formula $\ast$
+\end_inset
+
+ את מספר התווים שנקרא לתוך החוצץ.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+שימו לב
+\series default
+, גם אם אותו התקן נפתח ע
+\begin_inset Quotes erd
+\end_inset
+
+י תהליך מספר רב של פעמים )כמה קריאות ל-
+\lang english
+open
+\lang hebrew
+(, כל פעולות הקריאה שיופנו ל-
+\lang english
+file descriptors
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שהתקבלו מקריאות ה-
+\lang english
+open
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יקראו כולן מאותו החוצץ של ההתקן: יש רק שני חוצצים, אחד לכל התקן.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+מימוש גרסה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+read
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+XOR Cipher
+\lang hebrew
+, באופן דומה ל-
+\lang english
+Caesar Cipher
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+קומפילציה והרצה
+\end_layout
+
+\begin_layout Standard
+סופקו לכם הקבצים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+encdec.c
+\lang hebrew
+: שלד לכתיבת התרגיל - השתמשו בו.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+encdec.h
+\lang hebrew
+: מכיל הגדרות של קבועים שישמשו אתכם במימוש )אין לערוך קובץ זה(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+Makefile
+\lang hebrew
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+קובץ המגדיר כיצד לקמפל את התרגיל.
+\end_layout
+
+\begin_layout Itemize
+להידור המודול, עליכם להריץ את הפקודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+make
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב-
+\lang english
+shell
+\lang hebrew
+, וכך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gcc
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהדר את המודול כמוגדר ב-
+\lang english
+Makefile
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+אין לערוך קובץ זה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+load
+\lang hebrew
+: 
+\lang english
+shell script
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שטוען את המודול לגרעין )באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+insmod
+\lang hebrew
+(.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+בנוסף, הסקריפט יוצר שני קבצי התקנים: אחד בשם 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+/dev/encedc0
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minor 0
+\lang hebrew
+, והשני 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+/dev/encdec1
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+minor 1
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+שימו לב
+\series default
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+load
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלת פרמטר בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+memory_size
+\lang hebrew
+, שמועבר בהמשך למודול שכתבתם.
+ אם תריצו 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+./load memory_size=100
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+load
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תאתחל את המודול כך ש-
+\lang english
+memory_size
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $100$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+אין לערוך קובץ זה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+unload
+\lang hebrew
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+shell script
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמבצע את הפעולה ההופכית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+load
+\lang hebrew
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+מסיר את המודול שנטען ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+load
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהגרעין )באמצעות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+rmmod
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Itemize
+מוחק את שני קבצי ההתקנים שנוצרו ע
+\begin_inset Quotes erd
+\end_inset
+
+י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+load
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Itemize
+אין לערוך קובץ זה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+test
+\lang hebrew
+: תוכנית שבאמצעותה תוכלו לבדוק את תקינות מנהל ההתקן שתכתבו.
+ התוכנית מאפשרת למשתמש להזין את הפקודות הבאות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\series bold
+\lang english
+open #device_id #reference_id #flags
+\series default
+\lang hebrew
+.
+ פקודה זו תגרום לתהליך לקרוא ל-
+\lang english
+open
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור פתיחת התקן:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#device_id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $0$
+\end_inset
+
+ או 
+\begin_inset Formula $1$
+\end_inset
+
+, ובאמצעותו ייפתח 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+/dev/encdec0
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ או 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+/dev/encdec1
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ בהתאמה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#reference_id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו מספר המשויך ל-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+האמיתי שהתקבל כתוצאה מקריאה ל-
+\lang english
+open
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#flags
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא אחד מ-
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang english
+read
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+write
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+, ו-
+\lang english
+
+\begin_inset Quotes erd
+\end_inset
+
+read|write
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang hebrew
+.
+\begin_inset Newline newline
+\end_inset
+
+למשל: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+open 0 2 read
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+: פתח את 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+/dev/encdec0
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ לקריאה, שייך את ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+למספר 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\series bold
+\lang english
+write #reference_id 
+\begin_inset Quotes eld
+\end_inset
+
+#string
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+\lang hebrew
+.
+ פקודה זו תגרום לתהליך לקרוא 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ל-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+write
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור כתיבה להתקן:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#reference_id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לכתיבה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#string
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא המחרוזת אותה אנו מעוניינים לכתוב להתקן )באופן מוצפן(.
+\begin_inset Newline newline
+\end_inset
+
+למשל: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+\lang english
+write 1 
+\begin_inset Quotes eld
+\end_inset
+
+Hello World
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+: לכתוב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Hello World
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ אל ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמזוהה עם המספר 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\series bold
+\lang english
+read #reference_id #count
+\series default
+\lang hebrew
+.
+ פקודה זו תגרום לתהליך לקרוא 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ל-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+read
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור קריאה מהתקן:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#reference_id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לקריאה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#count
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו מספר הבתים אנו מעוניינים לקרוא.
+\begin_inset Newline newline
+\end_inset
+
+למשל: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+\lang english
+read 1 5
+\series default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+: לקרוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+תווים מה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמזוהה עם המספר 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\series bold
+\lang english
+lseek #reference_id #pos
+\series default
+\lang hebrew
+.
+ פקודה זו תגרום לתהליך לקרוא ל-
+\lang english
+lseek
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי להזיז את ה-
+\lang english
+seek pointer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמזוהה עם ה-
+\lang english
+reference id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הנתון:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#reference_id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הרלוונטי.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#pos
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו המיקום החדש של ה-
+\lang english
+seek pointer
+\lang hebrew
+.
+\begin_inset Newline newline
+\end_inset
+
+למשל: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+\lang english
+lseek 0 0
+\series default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+: הזז את ה-
+\lang english
+seek pointer
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שמזוהה עם המספר 
+\begin_inset Formula $0$
+\end_inset
+
+, כך שיצביע לבית הראשון בחוצץ של ההתקן.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\series bold
+\lang english
+ioctl #reference_id #cmd #arg
+\series default
+\lang hebrew
+.
+ פקודה זו תגרום לתהליך לקרוא ל-
+\lang english
+ioctl
+\lang hebrew
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#reference_id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הרלוונטי.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#cmd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו מזהה הפקודה שברצוננו לבצע:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+change_key
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+change_read_state
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+ או 
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+zero
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#arg
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו ארגומנט הפקודה שברצוננו לספק, אופציונלי:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם הפקודה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+change_key
+\lang hebrew
+, יכיל את ערך המפתח החדש.
+\end_layout
+
+\begin_layout Itemize
+אם הפקודה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+change_read_state
+\lang hebrew
+, יכיל את הערך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+decrypt
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+raw
+\lang hebrew
+.
+\begin_inset Newline newline
+\end_inset
+
+למשל: 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+\lang english
+ioctl 2 change_key 5
+\series default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+, או 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+\lang english
+ioctl 2 change_read_state raw
+\series default
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\series bold
+\lang english
+close #reference_id
+\series default
+\lang hebrew
+.
+ פקודה זו תגרום לתהליך לקרוא לפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+close
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המזוהה עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+reference id
+\lang hebrew
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+#reference_id
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו ה-
+\lang english
+fd
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הרלוונטי.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\series bold
+\lang english
+exit
+\series default
+\lang hebrew
+.
+ פקודה זו מסיימת את ריצת התוכנית.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\phantom{}$
+\end_inset
+
+
+\lang english
+test.c
+\lang hebrew
+: קובץ המקור של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+test
+\lang hebrew
+.
+ אנא בדקו שאתם מבינים כיצד הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+execute_command
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)המוגדרת בו( עובדת, להבנת התרגיל באופן טוב יותר )אין לערוך קובץ זה(.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left\{ \text{test}\circ i\circ\text{.in}\right\} _{i=1}^{5}\cup\left\{ \text{test}\circ i\circ\text{.out}\right\} _{i=1}^{5}$
+\end_inset
+
+: קבצי בדיקה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר אתם עובדים על התרגיל, וודאו כי כל הקבצים נמצאים באותה הספרייה.
+ כאשר תרצו לבדוק את המודול שכתבתם, בצעו את השלבים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+הריצו את התוכנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+unload
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי להסיר את גרסת המודול הנוכחית שמותקנת בגרעין.
+\end_layout
+
+\begin_layout Enumerate
+הריצו את התוכנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+make
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי להדר מחדש את המודול.
+\end_layout
+
+\begin_layout Enumerate
+הריצו את התוכנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+load
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לטעון מחדש את המודול המהודר.
+\end_layout
+
+\begin_layout Enumerate
+הריצו את התוכנית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+test
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לעבוד מול מנהל ההתקן שהותקן ע
+\begin_inset Quotes erd
+\end_inset
+
+י המודול )באמצעות בדיקה ידנית, קבצי הבדיקה הנתונים או קבצי בדיקה שתצרו בעצמכם(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לנוחיותכם, ניתן לראות 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "כאן"
+target "https://www.youtube.com/watch?v=DblsEXL8nh8"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+ דוגמא לשימוש באופן העבודה המפורט לעיל.
+\end_layout
+
+\begin_layout Subsection*
+הגשה
+\end_layout
+
+\begin_layout Standard
+הגשה במודל, לפי הפורמט הבא:
+\end_layout
+
+\begin_layout Enumerate
+עליכם ליצור קובץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)השתמשו ב-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+gzip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בלבד( בשם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+hw2_id1_id2.zip
+\lang hebrew
+, כאשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+id1, id2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הם מספרי תעודות הזהות של המגישים.
+\end_layout
+
+\begin_layout Enumerate
+קובץ ה-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מכיל 
+\series bold
+אך ורק
+\series default
+ את הקבצים הבאים, 
+\series bold
+ללא תתי-ספריות
+\series default
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\text{encdec.c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\color red
+\begin_inset Formula $\text{dry.pdf}$
+\end_inset
+
+, שמכיל את התשובות לחלק התיאורטי.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\text{submitters.txt}$
+\end_inset
+
+, שמכיל את מספרי הזהות והשמות של מגישי התרגיל, מופרדים ע
+\begin_inset Quotes erd
+\end_inset
+
+י פסיק.
+ למשל:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\lang english
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "80col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+\lang english
+Bill Gates,bill@microsoft.com,123456789
+\begin_inset Newline newline
+\end_inset
+
+Linus Torvalds,linus@gmail.com,234567890
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+צרו את קובץ ה-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באמצעות הפקודה
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+\lang english
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+\size small
+\lang english
+zip hw2_id1_id2.zip encedc.c dry.pdf submitters.txt
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הגישו את ה-
+\lang english
+zip
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרך המודל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

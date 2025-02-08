@@ -1,0 +1,9 @@
+open 0 0 read|write
+ioctl 0 zero
+ioctl 0 change_key 0
+ioctl 0 change_read_state decrypt
+write 0 "Hello World"
+open 0 1 read|write
+read 1 11
+close 0
+exit

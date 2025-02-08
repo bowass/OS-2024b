@@ -1,0 +1,62 @@
+ID,Penalty,Penalty Notes,Wet grade,Wet Notes,Dry grade,Dry Notes,final
+214709214,7,,16, --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,27,"q2: ""why is it not possible"", not ""why we do not allow it"" (-3)",65
+216220715,7,,16, --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,27,"q2: ""why is it not possible"", not ""why we do not allow it"" (-3)",65
+214894263,7,,40, --newline-- test number 3 failed,23,"q1: why is it easier with a stack? Also variadic functions (-4)
+q2: ""why is it not possible"", not ""why we do not allow it"" (-3)
+q3: also 183 (-1)
+q4: first output is 3 (-4)
+printing bonus +5",85
+215447194,7,,40, --newline-- test number 3 failed,32,"q4: first case output is 3 (-3)
+printing bonus +5",94
+215549544,7,,48,,35,printing bonus +5,105
+216430272,7,,48,,35,printing bonus +5,105
+215973181,7,,48,,31,"q2: there is no access to the kernel stack from user space (-4)
+printing bonus +5",101
+327949434,7,,48,,31,"q2: there is no access to the kernel stack from user space (-4)
+printing bonus +5",101
+216057059,7,,48,,34,"q3: also 183 (-1)
+printing bonus +5",104
+215822545,7,,48,,34,"q3: also 183 (-1)
+printing bonus +5",104
+216298596,7,,48,,28,"q1: why is it easier? (-7)
+printing bonus +5",98
+327623871,7,,48,,28,"q1: why is it easier? (-7)
+printing bonus +5",98
+326143997,7,,40, --newline-- test number 3 failed,30,"q1: inaccurate, also variadic functions (-4)
+q3: also 183 (-1)
+printing bonus +5",92
+325826303,7,,40, --newline-- test number 3 failed,30,"q1: inaccurate, also variadic functions (-4)
+q3: also 183 (-1)
+printing bonus +5",92
+326816774,7,,40, --newline-- test number 3 failed,26,"q2: inaccurate (-3)
+q3: also 183 (-1)",88
+327615787,7,,40, --newline-- test number 3 failed,25,"q1: not related (-7)
+q3: 8 also possible (-3)
+printing bonus +5",87
+327949517,7,,40, --newline-- test number 3 failed,25,"q1: not related (-7)
+q3: 8 also possible (-3)
+printing bonus +5",87
+327946109,7,,40, --newline-- test number 3 failed,29,"q1: why easier? Inaccurate (-3)
+q2: ""why it is not possible"", not ""why we do not allow it"" (-3)
+printing bonus +5",91
+328425632,7,,40, --newline-- test number 3 failed,29,"q1: why easier? Inaccurate (-3)
+q2: ""why it is not possible"", not ""why we do not allow it"" (-3)
+printing bonus +5",91
+327948063,7,,0, --newline-- test number 1 failed due to segmentation fault --newline-- test number 2 failed due to segmentation fault --newline-- test number 3 failed due to segmentation fault --newline-- test number 4 failed due to segmentation fault --newline-- test number 5 failed due to segmentation fault --newline-- test number 6 failed due to segmentation fault,35,printing bonus +%,57
+216282061,7,,0, --newline-- test number 1 failed due to segmentation fault --newline-- test number 2 failed due to segmentation fault --newline-- test number 3 failed due to segmentation fault --newline-- test number 4 failed due to segmentation fault --newline-- test number 5 failed due to segmentation fault --newline-- test number 6 failed due to segmentation fault,35,printing bonus +%,57
+328356126,7,,0, --newline-- test number 1 failed due to segmentation fault --newline-- test number 2 failed due to segmentation fault --newline-- test number 3 failed due to segmentation fault --newline-- test number 4 failed due to segmentation fault --newline-- test number 5 failed due to segmentation fault --newline-- test number 6 failed due to segmentation fault,31,"q1: why is it easier? Inaccturate (-4)
+printing bonus +5",53
+327618914,7,,0, --newline-- test number 1 failed due to segmentation fault --newline-- test number 2 failed due to segmentation fault --newline-- test number 3 failed due to segmentation fault --newline-- test number 4 failed due to segmentation fault --newline-- test number 5 failed due to segmentation fault --newline-- test number 6 failed due to segmentation fault,31,"q1: why is it easier? Inaccturate (-4)
+printing bonus +5",53
+328358635,7,,40, --newline-- test number 3 failed,27,q4: first case output is 3 (-3),89
+215397571,7,,40, --newline-- test number 3 failed,27,q4: first case output is 3 (-3),89
+328439781,7,,40, --newline-- test number 3 failed,30,"q1: why? Inaccturate (-4)
+q3: also 183 (-1)
+q4: outputs are 3\n and 0\n7\n (-5)
+latex bonus +10",92
+327872347,7,,40, --newline-- test number 3 failed,30,"q1: why? Inaccturate (-4)
+q3: also 183 (-1)
+q4: outputs are 3\n and 0\n7\n (-5)
+latex bonus +10",92
+330956095,7,,8, --newline-- test number 1 failed --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,29,q3: also 183 (-1),59
+326144540,7,,8, --newline-- test number 1 failed --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,29,q3: also 183 (-1),59

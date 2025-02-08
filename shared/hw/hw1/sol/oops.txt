@@ -1,0 +1,17 @@
+11/4 end of modules + sched
+*** hw2 ***
+18/4 NO TUT
+25/4 NO TUT
+ctx switch (maybe rm)
+1X hashlama to do threads (idk when)
+*** hw3 ***
+2/5 synch
+9/5 virt mem hw
+*** hw4 ***
+16/5 virt mem os
+23/5 page cache
+30/5 fs
+
+13/4 - 27/4: module
+27/4 - 11/5: threads
+11/5 - 25/5: paging

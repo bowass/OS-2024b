@@ -52,7 +52,7 @@ customHeadersFooters
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "David"
+\font_roman "default" "Hadasim CLM"
 \font_sans "default" "David"
 \font_typewriter "default" "Miriam Fixed"
 \font_math "auto" "auto"
@@ -117,6 +117,8 @@ customHeadersFooters
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\bullet 0 0 18 -1
+\bullet 1 0 20 -1
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -129,7 +131,7 @@ customHeadersFooters
 \begin_layout Title
 
 \size giant
-מערכות הפעלה – תרגיל בית
+מערכות הפעלה - תרגיל בית
 \family roman
 \series medium
 \shape up
@@ -170,7 +172,7 @@ customHeadersFooters
 \end_layout
 
 \begin_layout Center Header
-מערכות הפעלה – אוניברסיטת חיפה – תרגיל בית
+מערכות הפעלה - אוניברסיטת חיפה - תרגיל בית
 \family roman
 \series medium
 \shape up
@@ -215,7 +217,22 @@ Download VMware
 \series bold
 Player
 \series default
- from here.
+ from 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -231,7 +248,22 @@ Download the zip file of the Red Hat Linux
 \series bold
 Linux-cs234123
 \series default
- from here.
+ from 
+\bar under
+\color blue
+
+\begin_inset CommandInset href
+LatexCommand href
+name "here"
+target "https://drive.google.com/file/d/1NUvjkLzXAonpvhT0QcwKH5xgFbr1q5cP/view?usp=sharing"
+literal "false"
+
+\end_inset
+
+
+\bar default
+\color inherit
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -401,10 +433,14 @@ fgets
 רישא
 \series default
  של הקלט היא מהצורה 
-\begin_inset Formula $\text{whitespace}\;a\;\text{whitespace}\;op\text{whitespace}\;b$
+\begin_inset Formula 
+\[
+\text{whitespace}\;a\;\text{whitespace}\;op\;\text{whitespace}\;b
+\]
+
 \end_inset
 
-, אז התוכנית תדפיס ל-
+אז התוכנית תדפיס ל-
 \lang english
 output stream
 \family roman
@@ -597,6 +633,13 @@ error
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 
 \series bold
@@ -618,7 +661,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -671,7 +714,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Formula $\begin{array}{c}
 0+0\\
-8-1\\
+1-8\\
 9\ast2\\
 3/9
 \end{array}$
@@ -1375,7 +1418,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-בדקן את תקינות התוכנית שלכם ע
+בדקו את תקינות התוכנית שלכם ע
 \begin_inset Quotes erd
 \end_inset
 
@@ -1393,7 +1436,7 @@ test
 
 \lang hebrew
 (.
- בידקו את תקינות התוכנית שלכם ע
+ בדקו את תקינות התוכנית שלכם ע
 \begin_inset Quotes erd
 \end_inset
 
@@ -1586,7 +1629,7 @@ diff test1.out mytest1.out
 
 \begin_layout Standard
 בצעו בדיקה זו עבור כל קובץ בדיקה.
- לנוחיותכם, הדגמה של השלבים נמצאת בלינק 
+ לנוחיותכם, הדגמת השלבים נמצאת בלינק 
 \bar under
 \color blue
 
@@ -1870,7 +1913,7 @@ zip
 \series bold
 אך ורק
 \series default
- את הקבצים ההבאים, 
+ את הקבצים הבאים, 
 \series bold
 ללא תתי-ספריות
 \series default

@@ -1,0 +1,21 @@
+create_list
+insert_value 20
+insert_value 21
+insert_value 22
+insert_value 23
+insert_value 24
+insert_value 25
+join
+insert_value 1
+insert_value 9
+insert_value 2
+insert_value 5
+insert_value 6
+count_greater 19
+insert_value 11
+insert_value 3
+insert_value 19
+join
+delete_list
+join
+exit

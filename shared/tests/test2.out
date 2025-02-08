@@ -1,0 +1,10 @@
+hello world!
+ls: cannot access 'sosdoskls': No such file or directory
+date: extra operand ‘nice’
+Try 'date --help' for more information.
+my-shell> my-shell> my-shell> my-shell> my-shell> 5 	 history &
+4 	 date hi nice exit
+3 	 sleep 1
+2 	 ls sosdoskls &
+1 	 echo hello world!
+my-shell> 

@@ -1,0 +1,7 @@
+open 0 0 read|write
+write 0 "012345678901"
+ioctl 0 zero
+ioctl 0 change_key 0
+ioctl 0 change_read_state raw
+close 0 
+exit

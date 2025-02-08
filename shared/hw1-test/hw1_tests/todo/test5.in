@@ -1,0 +1,10 @@
+rm ./temp -rf
+mkdir temp
+touch myfile.txt
+history
+cp myfile.txt ./temp/myfile.txt
+ls ./todo/temp
+rm ./temp -rf
+rm myfile.txt
+ls ./todo
+exit

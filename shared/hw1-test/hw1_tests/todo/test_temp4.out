@@ -1,0 +1,16 @@
+error
+: No such file or directory
+my-shell> error
+: No such file or directory
+my-shell> my-shell> error
+: No such file or directory
+my-shell> my-shell> my-shell> error
+: No such file or directory
+my-shell> my-shell> my-shell> my-shell> Sat Apr 20 13:42:25 IDT 2024
+ my-shell> my-shell> my-shell> 6 history  
+5 date & 
+4 !ten  
+3 !10  
+2 !1  
+1 !-1  
+my-shell> 

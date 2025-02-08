@@ -1,0 +1,37 @@
+open 0 0 read|write
+open 0 1 read|write
+open 1 2 read|write
+open 1 3 read|write
+ioctl 0 zero
+ioctl 1 zero
+ioctl 2 zero
+ioctl 3 zero
+ioctl 0 change_key 0
+ioctl 1 change_key 0
+ioctl 2 change_key 0
+ioctl 3 change_key 0
+ioctl 0 change_read_state decrypt
+ioctl 1 change_read_state decrypt
+ioctl 2 change_read_state decrypt
+ioctl 3 change_read_state decrypt
+write 0 "23456789ABCDEFG"
+read 1 10
+write 2 "23456789ABCDEFG"
+read 3 10
+ioctl 0 change_key 1
+ioctl 1 change_key 2
+lseek 0 0
+lseek 1 0
+write 0 "23456789"
+write 0 "23456789"
+ioctl 0 change_key 2
+ioctl 1 change_key 1
+lseek 0 0
+lseek 1 8
+read 0 5
+read 1 5
+close 0
+close 1
+close 2
+close 3
+exit

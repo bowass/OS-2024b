@@ -1,0 +1,30 @@
+ID,Penalty,Penalty Notes,Wet grade,Wet Notes,Dry grade,Dry Notes,final
+214709214,7,,16, --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,0,,0
+216220715,7,,16, --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,0,,0
+214894263,7,,40, --newline-- test number 3 failed,0,,0
+215447194,7,,40, --newline-- test number 3 failed,0,,0
+215549544,7,,48,,0,,0
+216430272,7,,48,,0,,0
+215973181,7,,48,,0,,0
+327949434,7,,48,,0,,0
+216057059,7,,48,,0,,0
+215822545,7,,48,,0,,0
+216298596,7,,48,,0,,0
+327623871,7,,48,,0,,0
+326143997,7,,40, --newline-- test number 3 failed,0,,0
+325826303,7,,40, --newline-- test number 3 failed,0,,0
+326816774,7,,40, --newline-- test number 3 failed,0,,0
+327615787,7,,40, --newline-- test number 3 failed,0,,0
+327949517,7,,40, --newline-- test number 3 failed,0,,0
+327946109,7,,40, --newline-- test number 3 failed,0,,0
+328425632,7,,40, --newline-- test number 3 failed,0,,0
+327948063,7,,40, --newline-- test number 2 failed,0,,0
+216282061,7,,40, --newline-- test number 2 failed,0,,0
+328356126,7,,0, --newline-- test number 1 failed due to segmentation fault --newline-- test number 2 failed due to segmentation fault --newline-- test number 3 failed due to segmentation fault --newline-- test number 4 failed due to segmentation fault --newline-- test number 5 failed due to segmentation fault --newline-- test number 6 failed due to segmentation fault,0,,0
+327618914,7,,0, --newline-- test number 1 failed due to segmentation fault --newline-- test number 2 failed due to segmentation fault --newline-- test number 3 failed due to segmentation fault --newline-- test number 4 failed due to segmentation fault --newline-- test number 5 failed due to segmentation fault --newline-- test number 6 failed due to segmentation fault,0,,0
+328358635,7,,40, --newline-- test number 3 failed,0,,0
+215397571,7,,40, --newline-- test number 3 failed,0,,0
+328439781,7,,40, --newline-- test number 3 failed,0,,0
+327872347,7,,40, --newline-- test number 3 failed,0,,0
+330956095,7,,8, --newline-- test number 1 failed --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,0,,0
+326144540,7,,8, --newline-- test number 1 failed --newline-- test number 2 failed --newline-- test number 3 failed --newline-- test number 4 failed --newline-- test number 5 failed,0,,0

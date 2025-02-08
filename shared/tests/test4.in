@@ -1,0 +1,8 @@
+cal    &
+sleep 1
+echo OOPS
+      cal &
+sleep 1
+ls -lf-l f-
+history &
+exit

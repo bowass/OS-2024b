@@ -48,6 +48,7 @@ int getNumArgs(char* s, int* front) {
 	int spaces = 0;
 	char* tmp = s;
 	*front = 1;
+	if (!tmp[0]) return 0;
 	// get #spaces + 1
 	while ((tmp = strchr(tmp, ' ')) != NULL) {
 		spaces++; tmp++;
@@ -79,49 +80,49 @@ int main(void) {
         if(strncmp(command, "exit", 4) == 0)
 		break;
         
-	// remove trailing '\n'
-	command[strcspn(command, "\n")] = '\0';
-		
-	// get #arguments and front/background
-	numArgs = getNumArgs(command, &front);
+		// remove trailing '\n'
+		command[strcspn(command, "\n")] = '\0';
+			
+		// get #arguments and front/background
+		numArgs = getNumArgs(command, &front);
 
-        // save command & push to history
-        argv = (char**) malloc(sizeof(char*)*(numArgs+1));
-        add_to_history(&history, command);
-        
-        // parse command & update argv
-	ptr = strtok(command, " ");
-        if (ptr != NULL) strcpy(command, ptr);
-		
-        for (int i = 0; i < numArgs; i++) {
-        	argv[i] = ptr;
-        	ptr = strtok(NULL, " ");
-	}
-        argv[numArgs] = NULL;
+		// save command & push to history
+		argv = (char**) malloc(sizeof(char*)*(numArgs+1));
+		add_to_history(&history, command);
+			
+		// parse command & update argv
+		ptr = strtok(command, " ");
+		if (ptr != NULL) strcpy(command, ptr);	
+		for (int i = 0; i < numArgs; i++) {
+			argv[i] = ptr;
+			ptr = strtok(NULL, " ");
+		}
+		argv[numArgs] = NULL;
+		if (!numArgs) continue; // empty cmd
 
-    	// history command
-	if (strncmp(argv[0], "history", 7) == 0)
-	        print_history(history);
-	    // non-history -> fork
-        else if ((pid = fork()) < 0) {
-		perror("error");
-		free(argv);
-		free_history(&history);
-		exit(1);
-	}
-        // child process
-        else if (pid == 0) {
-	       	argv[numArgs-1][strcspn(argv[numArgs-1], "&")] = 0;
-		if (execvp(command, argv) < 0) {
+		// history command
+		if (strncmp(argv[0], "history", 7) == 0)
+			print_history(history);
+		// non-history -> fork
+		else if ((pid = fork()) < 0) {
 			perror("error");
 			free(argv);
 			free_history(&history);
 			exit(1);
 		}
-		break;
-        }
-        // parent process
-        else if (front) waitpid(pid, NULL, 0);
+		// child process
+		else if (numArgs > 0 && pid == 0) {
+			argv[numArgs-1][strcspn(argv[numArgs-1], "&")] = 0;
+			if (execvp(command, argv) < 0) {
+				perror("error");
+				free(argv);
+				free_history(&history);
+				exit(1);
+			}
+			break;
+		}
+		// parent process
+		else if (front) waitpid(pid, NULL, 0);
         free(argv);
     }
     
@@ -130,4 +131,3 @@ int main(void) {
 
     return 0;
 }
-

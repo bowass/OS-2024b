@@ -1,0 +1,6 @@
+open 0 0 read|write
+write 0 "0000 0000 00"
+ioctl 0 zero
+ioctl 0 change_key 0
+close 0 
+exit

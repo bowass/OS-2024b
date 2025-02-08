@@ -14,6 +14,8 @@
 \definecolor{brown}{RGB}{154,58,0}
 \definecolor{orange}{RGB}{231,135,26}
 \definecolor{purple}{RGB}{94,53,177}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -24,7 +26,7 @@ customHeadersFooters
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "David"
+\font_roman "default" "Hadasim CLM"
 \font_sans "default" "David"
 \font_typewriter "default" "Miriam Fixed"
 \font_math "auto" "auto"
@@ -89,6 +91,8 @@ customHeadersFooters
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
+\bullet 0 0 18 -1
+\bullet 1 0 20 -1
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -101,7 +105,7 @@ customHeadersFooters
 \begin_layout Title
 
 \size giant
-מערכות הפעלה – תרגיל בית
+מערכות הפעלה - תרגיל בית
 \family roman
 \series medium
 \shape up
@@ -142,7 +146,7 @@ customHeadersFooters
 \end_layout
 
 \begin_layout Center Header
-מערכות הפעלה – אוניברסיטת חיפה – תרגיל בית
+מערכות הפעלה - אוניברסיטת חיפה - תרגיל בית
 \family roman
 \series medium
 \shape up
@@ -180,7 +184,7 @@ customHeadersFooters
 חלק תיאורטי )
 \numeric on
 
-\begin_inset Formula $30\%$
+\begin_inset Formula $30$
 \end_inset
 
 
@@ -210,15 +214,15 @@ customHeadersFooters
 \uwave default
 \noun default
 \color inherit
-ניקוד(, בו יהיה עליכם לענות על מספר שאלות תיאורטיות.
+נקודות(, בו יהיה עליכם לענות על מספר שאלות תיאורטיות.
 \end_layout
 
 \begin_layout Enumerate
 חלק מעשי )
-\begin_inset Formula $70\%$
+\begin_inset Formula $70$
 \end_inset
 
- ניקוד(, בו יהיה עליכם לממש
+ נקודות(, בו יהיה עליכם לממש
 \family roman
 \series medium
 \shape up
@@ -629,7 +633,7 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -644,7 +648,7 @@ pid_t pid = fork)(;
 
 \begin_layout Plain Layout
 
-if )pid < 0( exit)1(;
+if )pid > 0( exit)1(;
 \end_layout
 
 \begin_layout Plain Layout
@@ -743,7 +747,7 @@ sleep
 \begin_layout Plain Layout
 קטע קוד קצר.
  הניחו כי 
-\begin_inset Formula $\text{pid}\left(\text{father}\right)=8,\text{pid}\left(\text{child}\right)=13$
+\begin_inset Formula $\text{pid}\left(\text{parent}\right)=8,\text{pid}\left(\text{child}\right)=13$
 \end_inset
 
 .
@@ -976,9 +980,206 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename img/run_front_back.png
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[rectangle,draw=black,fill=purple!20] (a1) {
+\backslash
+texttt{cmd = read
+\backslash
+_next();}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[ellipse,draw=black,fill=blue!20,right of=a1,xshift=4cm] (a2) {
+\backslash
+texttt{fork()}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[ellipse,draw=black,fill=blue!20,below right of=a2,yshift=-1.5cm,xshift=1cm]
+ (a3) {
+\backslash
+texttt{execv(cmd)}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[ellipse,draw=black,fill=blue!20,right of=a3,xshift=3cm] (a4) {
+\backslash
+texttt{exit()}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[ellipse,draw=black,fill=blue!20,right of=a2,xshift=3cm] (a5) {
+\backslash
+texttt{wait()}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[->]
+\end_layout
+
+\begin_layout Plain Layout
+
+	(a1) edge[] (a2)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(a2) edge[above,sloped] node{child} (a3)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(a2) edge[above] node{parent} (a5)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(a3) edge[] (a4)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(a4) edge[] (a5)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(a5) edge[bend right] (a1)
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[rectangle,draw=black,fill=purple!20,below of=a1,yshift=-3cm] (b1) {
+\backslash
+texttt{cmd = read
+\backslash
+_next();}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[ellipse,draw=black,fill=blue!20,right of=b1,xshift=4cm] (b2) {
+\backslash
+texttt{fork()}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[ellipse,draw=black,fill=blue!20,below right of=b2,yshift=-1.5cm,xshift=1cm]
+ (b3) {
+\backslash
+texttt{execv(cmd)}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[ellipse,draw=black,fill=blue!20,right of=b3,xshift=3cm] (b4) {
+\backslash
+texttt{exit()}};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[->]
+\end_layout
+
+\begin_layout Plain Layout
+
+	(b1) edge[] (b2)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(b2) edge[above,sloped] node{child} (b3)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(b2) edge[bend right,above] node{parent} (b1)
+\end_layout
+
+\begin_layout Plain Layout
+
+	(b3) edge[] (b4)
+\end_layout
+
+\begin_layout Plain Layout
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
 
 \end_inset
 
@@ -989,7 +1190,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-הרצה בחזית וברקע.
+מלמעלה למטה: הרצה בחזית, הרצה ברקע.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:run_front_back"
@@ -1139,7 +1340,7 @@ history
 
 \begin_deeper
 \begin_layout Enumerate
-הרצאה לדוגמא ב
+הרצה לדוגמא ב
 \bar under
 \color blue
 
@@ -1487,7 +1688,15 @@ shell
 \noun default
 \color inherit
 \lang english
+
+\begin_inset Quotes erd
+\end_inset
+
 which x
+\begin_inset Quotes erd
+\end_inset
+
+
 \family default
 \lang hebrew
 .
@@ -1968,7 +2177,7 @@ zip
 \series bold
 אך ורק
 \series default
- את הקבצים ההבאים, 
+ את הקבצים הבאים, 
 \series bold
 ללא תתי-ספריות
 \series default
@@ -2127,46 +2336,51 @@ zip
 \uwave default
 \noun default
 \color inherit
-באמצעות הפקודה 
+באמצעות הפקודה
+\begin_inset Newline newline
+\end_inset
+
+
 \family typewriter
 \lang english
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\family typewriter
+\size small
+\lang english
 zip hw1_id1_id2.zip myshell.c dry.pdf submitters.txt
-\family default
-\lang hebrew
-.
 \end_layout
 
-\begin_layout Enumerate
-הגישה את ה-
-\lang english
-zip
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang hebrew
- 
+\end_inset
+
+
 \family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-דרך המודל.
+\lang hebrew
+
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

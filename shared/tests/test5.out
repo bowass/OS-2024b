@@ -1,0 +1,30 @@
+ls: cannot access './todo/temp': No such file or directory
+a.out
+myshell
+myshell.c
+myshell_f
+myshell_f.c
+myshell_skeleton.c
+submitters.txt
+test1.in
+test1.out
+test2.in
+test2.out
+test3.in
+test3.out
+test4.in
+test4.out
+test5.in
+test5.out
+test6.in
+test6.out
+test_temp1.out
+test_temp2.out
+test_temp3.out
+test_temp4.out
+test_temp5.out
+my-shell> my-shell> my-shell> my-shell> 4 	 history
+3 	 touch myfile.txt
+2 	 mkdir temp
+1 	 rm ./temp -rf
+my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> 

@@ -1,0 +1,17 @@
+hello world!
+hello world!
+hello world!
+error: No such file or directory
+my-shell> my-shell> my-shell> my-shell> error: No such file or directory
+my-shell> my-shell> my-shell> my-shell> my-shell> error: No such file or directory
+my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> error: No such file or directory
+my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> my-shell> No History
+my-shell> 8 	 history
+7 	 !       3
+6 	 !aa
+5 	           history
+4 	        exit
+3 	 echo hello world!
+2 	 echo hello world!
+1 	 echo hello world!
+my-shell> 

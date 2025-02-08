@@ -1,0 +1,10 @@
+echo hello world!
+!!
+!1
+       exit
+          history
+!aa
+!       3
+!20
+history
+exit
